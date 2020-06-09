@@ -18,7 +18,7 @@ public class provider {
 
     public static void main(String[] args) throws IOException {
 
-        ServerSocket serverSocket = new ServerSocket(8080);
+        ServerSocket serverSocket = new ServerSocket(9090);
         while(isRunning){
             Socket socket = serverSocket.accept();
             process(socket);

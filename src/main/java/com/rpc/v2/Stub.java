@@ -1,19 +1,17 @@
-package com.rpc.v1;
+package com.rpc.v2;
+
+import com.rpc.common.IOrderService;
 import com.rpc.common.Order;
-import lombok.extern.slf4j.Slf4j;
 
-import	java.io.ObjectInputStream;
-import	java.io.DataOutputStream;
-import	java.io.ByteArrayOutputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
-import	java.net.Socket;
+import java.io.ObjectInputStream;
+import java.net.Socket;
 
-/**
- * 调用方
- */
-public class Consumer {
+public class Stub {
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public Order findOrderById(int orderId) throws IOException, ClassNotFoundException {
 
         Socket socket = new Socket("127.0.0.1",9090);
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -30,5 +28,7 @@ public class Consumer {
 
         dos.close();
         socket.close();
+
+        return order;
     }
 }
