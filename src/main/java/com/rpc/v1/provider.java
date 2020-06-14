@@ -4,6 +4,7 @@ import java.io.*;
 
 import com.rpc.common.IOrderService;
 import com.rpc.common.Order;
+import com.rpc.impl.OrderServiceImpl;
 
 import	java.net.Socket;
 

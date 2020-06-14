@@ -17,4 +17,16 @@ public class User implements Serializable{
      */
     private String userName;
 
+    public User(Integer id,String userName){
+        this.id = id;
+        this.userName = userName;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                '}';
+    }
 }
