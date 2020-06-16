@@ -56,7 +56,7 @@ public class Provider {
 
         Object service = getServiceByInterfaze(interfaze);
 
-        Class serviceClass=service.getClass();
+        Class serviceClass = service.getClass();
         Method  method = serviceClass.getMethod(methodName,parameterTypes);
 
         Object o =  method.invoke(service,args);
