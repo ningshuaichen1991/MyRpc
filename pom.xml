@@ -17,6 +17,17 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>hessian</groupId>
+            <artifactId>hessian</artifactId>
+            <version>3.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.38</version>
+        </dependency>
+
 
     </dependencies>
 

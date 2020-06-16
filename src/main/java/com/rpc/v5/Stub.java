@@ -1,8 +1,7 @@
-package com.rpc.v4;
+package com.rpc.v5;
 
-import com.rpc.common.IOrderService;
+import com.caucho.hessian.io.Hessian2Input;
 
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -28,8 +27,8 @@ public class Stub {
                 oos.writeObject(args);
                 oos.flush();
 
-                ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-                Object o = ois.readObject();
+                Hessian2Input input = new Hessian2Input(socket.getInputStream());
+                Object o = input.readObject();
 
                 //System.out.println("远程调用结果："+o.toString());
 
