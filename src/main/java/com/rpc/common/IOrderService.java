@@ -11,4 +11,11 @@ public interface IOrderService {
      * @return
      */
     Order findOrderById(Integer id);
+
+    /**
+     * 创建订单
+     * @param order
+     * @return
+     */
+    String createOrder(Order order);
 }

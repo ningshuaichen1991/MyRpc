@@ -29,8 +29,6 @@ public class Stub {
                 ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
                 Object o = ois.readObject();
 
-                System.out.println("远程调用结果："+o.toString());
-
                 oos.close();
                 socket.close();
                 return o;

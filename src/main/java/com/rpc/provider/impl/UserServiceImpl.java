@@ -1,4 +1,4 @@
-package com.rpc.impl;
+package com.rpc.provider.impl;
 
 import com.rpc.common.IUserService;
 import com.rpc.common.User;

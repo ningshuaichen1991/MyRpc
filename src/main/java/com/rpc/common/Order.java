@@ -22,6 +22,10 @@ public class Order implements Serializable {
 
 
 
+    public Order(BigDecimal amount){
+        this.amount = amount;
+    }
+
     public Order(Integer orderId,BigDecimal amount){
         this.orderId = orderId;
         this.amount = amount;

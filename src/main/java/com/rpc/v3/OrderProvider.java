@@ -3,13 +3,13 @@ import java.lang.reflect.InvocationTargetException;
 import	java.lang.reflect.Method;
 
 import com.rpc.common.IOrderService;
-import com.rpc.impl.OrderServiceImpl;
+import com.rpc.provider.impl.OrderServiceImpl;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class Provider {
+public class OrderProvider {
 
     public static boolean isRunning = true;
 

@@ -1,6 +1,5 @@
 package com.rpc.v2;
 
-import com.rpc.common.IOrderService;
 import com.rpc.common.Order;
 
 import java.io.ByteArrayOutputStream;
